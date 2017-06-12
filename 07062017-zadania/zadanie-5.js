@@ -9,3 +9,11 @@
     4. sprawdz dzialanie w konsoli
     5. jakies wnioski ?
 */
+
+(function () {
+	const ul = document.body.querySelector("ul[role]");
+	ul.addEventListener("click", function (e) {
+		concole.log("THIS", this);
+		console.log("TARGET", e.target);
+	}, false);
+}());

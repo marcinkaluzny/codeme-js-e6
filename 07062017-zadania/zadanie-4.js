@@ -7,3 +7,15 @@
     1. zmieni kolor tla elementu li na #999999
     2. ustawi atrybut aria-selected="true"
 */
+
+(function () {
+	const liList = document.body.querySelectorAll("ul[role] > li");
+
+	[].forEach.call(liList, function (li) {
+		li.addEventListener("click", function (e) {
+			//e.stopPropagation();
+			li.style.backgroundColor = "#999";
+			li.setAttribute("aria-selected", true);
+		}, false);
+	});
+}());

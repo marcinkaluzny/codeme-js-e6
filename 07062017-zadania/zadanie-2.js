@@ -10,3 +10,11 @@
     fn(0, true);
         outback: "number :: boolean"
 */
+
+function argsJoin() {
+	const outback = [].map.call(arguments, function (item) {
+		return typeof item;
+	});
+
+	return outback.join(' :: ');
+}

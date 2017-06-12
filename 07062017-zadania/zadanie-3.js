@@ -18,3 +18,22 @@
            z elementow li wybranych w punkcie c) atrybut role="tab"
            oraz id odpowiednio pierwszy id="tab-1" ... id="tab-4"
  */
+
+ (function () {
+    const ul = document.body.querySelector("ul[role]");
+
+    ul.classList.add("tablist");
+
+    // 1
+    const liList = ul.querySelectorAll("li");
+    // 2
+    const liList2 = ul.getElementsByTagName("li");
+    // 3
+    const liList3 = ul.children;
+
+    [].forEach.call(liList, function (item, index) {
+        item.setAttribute("role", "tab");
+        item.id = "tab-" + (index + 1);
+    });
+
+ }());
