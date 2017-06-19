@@ -37,8 +37,10 @@
     
     const paddleWidth = view.paddle.offsetWidth + 2;
     const ballDiameter = view.ball.offsetHeight;
-    const paddleBoomY = paddleTop - ballDiameter; 
+    const paddleBoomY = paddleTop - ballDiameter;
 
+    const bricksTop = view.bricks.offsetTop; 
+    const bricksBottom = bricksTop + view.bricks.offsetHeight;
     
     let paddleLeft;
     let ballTop;
@@ -79,7 +81,28 @@
                 deltaX = -1;
             } else if (ballLeft <= 0) {
                 deltaX = 1;
-            }       
+            }
+
+            if (bricksTop <= ballTop && ballTop <= bricksBottom) {
+                let element = document.elementFromPoint(
+                    arenaRect.left + ballLeft,
+                    arenaRect.top + ballTop
+                );
+                if (element.classList.contains("brick")) {
+                    let brickScore = Number.parseInt(
+                        element.getAttribute('data-score'), 10
+                    );
+                    // let brickScore = Number(element.dataset.score);
+
+                    score += brickScore;
+                    // score = score + brickScore;
+                    view.score.innerHTML = score;
+                    
+                    element.classList.add('hide');
+
+                    deltaY *= -1;
+                }
+            }      
         }, 1000 / 500);
     }
 
