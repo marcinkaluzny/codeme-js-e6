@@ -1,0 +1,27 @@
+.game {
+    width: 420px;
+    height: 270px;
+}
+
+.arena .bricks {
+    opacity: 0.1;
+}
+
+.game .arena::before {
+    content: "";
+    position: absolute;
+    top: 226px;
+    right: -20px;
+    left: -20px;
+    border-top: 1px dashed #999;
+}
+
+.game .arena::after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    top: -20px;
+    bottom: -20px;
+    left: 308px;
+    border-left: 1px dashed #999;
+}
