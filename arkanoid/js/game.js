@@ -22,7 +22,7 @@
     view.lifes.innerHTML = lifes;
     view.score.innerHTML = score;
 
-    const div = document.createElement('div');
+    /*const div = document.createElement('div');
     div.classList.add('brick');
 
 
@@ -30,7 +30,25 @@
         const clone = div.cloneNode(true);
         clone.setAttribute('data-score', scoreList[Math.floor(Math.random() * 3)]);
         view.bricks.appendChild(clone);
+    }*/
+
+    function createBricks(count = 30, scoreList = [1, 3, 5]) {
+        let outback = "";
+
+        for (let i = 1; i <= count; i += 1) {
+            outback += '<div class="brick" data-score="' +
+                scoreList[Math.floor(Math.random() * 3)] +
+                '"></div>';
+
+            // outback += `<div class="brick" data-score="${scoreList[Math.floor(Math.random() * 3)]}"></div>`;
+        }
+
+        return function (insertTo) {
+            insertTo.innerHTML = outback;
+        };
     }
+
+    createBricks(50, [3, 5, 7])(view.bricks);
 
     const arenaRect = view.arena.getBoundingClientRect();
     const paddleTop = view.paddle.offsetTop;

@@ -45,3 +45,21 @@ class AutoOsobowe extends Auto {
 }
 
 new AutoOsobowe('Opel', 'Corsa', 'sedan');
+
+
+function Prostokat(a, b) {
+	this.a = a;
+	this.b = b;
+}
+
+Prostokat.prototype.obliczPole = function () {
+	return this.a * this.b;
+}
+
+function Kwadrat(a) {
+	Prostokat.call(this, a, a);
+}
+
+Kwadrat.prototype = Object.create(Prostokat.prototype); // new Prostokat();
+
+
