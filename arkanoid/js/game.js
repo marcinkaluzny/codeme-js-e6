@@ -1,12 +1,14 @@
 (function () {
-
+    // pobieranie elementu kontenera gry poprzez ID
     const arkanoidWrapper = document.querySelector('#arkanoid');
-    console.log(arkanoidWrapper);
+    // mozna tez tak: const arkanoidWrapper = document.getElementById('arkanoid');
 
+    // wybranie wszystkich elementów o atrybucie ref z kontenera gry
     const refElements = arkanoidWrapper.querySelectorAll('[ref]');
-    
+
+    // obiekt przechowujacy referencje do elementow interface dom wybranych i przechowywanych w kolekcji refElements
     const view = {};
-    
+
     const scoreList = [1, 3, 5];
 
     let lifes = 3;
@@ -52,14 +54,14 @@
 
     const arenaRect = view.arena.getBoundingClientRect();
     const paddleTop = view.paddle.offsetTop;
-    
+
     const paddleWidth = view.paddle.offsetWidth + 2;
     const ballDiameter = view.ball.offsetHeight;
     const paddleBoomY = paddleTop - ballDiameter;
 
-    const bricksTop = view.bricks.offsetTop; 
+    const bricksTop = view.bricks.offsetTop;
     const bricksBottom = bricksTop + view.bricks.offsetHeight;
-    
+
     let paddleLeft;
     let ballTop;
     let ballLeft;
@@ -75,9 +77,9 @@
             view.ball.style.top = ballTop + 'px';
             view.ball.style.left = ballLeft + 'px';
 
-            if (paddleTop - ballDiameter < ballTop  
-                &&  paddleLeft <= ballLeft 
-                && paddleLeft + paddleWidth >= ballLeft) {
+            if (paddleTop - ballDiameter < ballTop &&
+                paddleLeft <= ballLeft &&
+                paddleLeft + paddleWidth >= ballLeft) {
 
                 deltaY = -1;
             } else if (ballTop >= arenaRect.height - ballDiameter) {
@@ -115,12 +117,12 @@
                     score += brickScore;
                     // score = score + brickScore;
                     view.score.innerHTML = score;
-                    
+
                     element.classList.add('hide');
 
                     deltaY *= -1;
                 }
-            }      
+            }
         }, 1000 / 500);
     }
 

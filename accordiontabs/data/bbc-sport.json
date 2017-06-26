@@ -1,0 +1,87 @@
+{
+    "status": "ok",
+    "source": "bbc-sport",
+    "sortBy": "top",
+    "articles": [
+        {
+            "author": "BBC Sport",
+            "title": "Lewis Hamilton calls Sebastian Vettel 'a disgrace' after Azerbaijan GP collision",
+            "description": "Lewis Hamilton calls title rival Sebastian Vettel \"a disgrace\" after the Ferrari driver drove into his Mercedes in the Azerbaijan Grand Prix.",
+            "url": "http://www.bbc.co.uk/sport/formula1/40400301",
+            "urlToImage": "http://ichef.bbci.co.uk/onesport/cps/624/cpsprodpb/17E55/production/_96677879_hamilton_vettel_reuters.jpg",
+            "publishedAt": "2017-06-25T19:44:57Z"
+        },
+        {
+            "author": "BBC Sport",
+            "title": "Sportsday - transfer news and gossip",
+            "description": "Updates from Wimbledon qualifying and Eastbourne, the latest transfer news and gossip, as well as the best of social media and debate.",
+            "url": "http://www.bbc.co.uk/sport/live/40028951",
+            "urlToImage": "http://newsimg.bbc.co.uk/media/images/67165000/jpg/_67165916_67165915.jpg",
+            "publishedAt": "2017-06-26T07:26:37Z"
+        },
+        {
+            "author": "BBC Sport",
+            "title": "England v South Africa: Dawid Malan hits 78 as hosts win Twenty20 series",
+            "description": "England win the Twenty20 series against South Africa as debutant Dawid Malan hits a rapid 78 in a 19-run victory at Cardiff.",
+            "url": "http://www.bbc.co.uk/sport/cricket/40398402",
+            "urlToImage": "http://ichef.bbci.co.uk/onesport/cps/624/cpsprodpb/60D3/production/_96678742_malanreuters.jpg",
+            "publishedAt": "2017-06-25T17:19:40Z"
+        },
+        {
+            "author": "BBC Sport",
+            "title": "British & Irish Lions 2017: Warren Gatland criticism 'desperate' says Steve Hansen",
+            "description": "Lions coach Warren Gatland's criticism of New Zealand's treatment of Conor Murray is \"desperate\", says All Blacks boss Steve Hansen.",
+            "url": "http://www.bbc.co.uk/sport/rugby-union/40401272",
+            "urlToImage": "http://ichef.bbci.co.uk/onesport/cps/624/cpsprodpb/1404D/production/_96679918_steve_hansen_warren_gatland.jpg",
+            "publishedAt": "2017-06-25T23:28:07Z"
+        },
+        {
+            "author": "BBC Sport",
+            "title": "Azerbaijan GP: F1 in 2017 just got nasty - and it's Sebastian Vettel's fault",
+            "description": "Sebastian Vettel driving into Lewis Hamilton was a shocking moment and it has added another dimension to the title battle, says Andrew Benson.",
+            "url": "http://www.bbc.co.uk/sport/formula1/40400424",
+            "urlToImage": "http://ichef.bbci.co.uk/onesport/cps/624/cpsprodpb/8FBD/production/_96679763_vettel_arivabenne_getty.jpg",
+            "publishedAt": "2017-06-25T21:27:36Z"
+        },
+        {
+            "author": "BBC Sport",
+            "title": "Queen's 2017: Feliciano Lopez beats Marin Cilic in Aegon Championships final",
+            "description": "Unseeded Spaniard Feliciano Lopez wins the Aegon Championships with victory over Marin Cilic in a final-set tie-break at Queen's.",
+            "url": "http://www.bbc.co.uk/sport/tennis/40398647",
+            "urlToImage": "http://ichef.bbci.co.uk/onesport/cps/624/cpsprodpb/79D3/production/_96678113_lopez.jpg",
+            "publishedAt": "2017-06-25T16:23:17Z"
+        },
+        {
+            "author": "BBC Sport",
+            "title": "Queen's 2017: Jamie Murray & Bruno Soares win doubles title",
+            "description": "Britain's Jamie Murray wins his first Queen's Club title as he and Bruno Soares beat France's Julien Beneteau and Edouard Roger-Vasselin.",
+            "url": "http://www.bbc.co.uk/sport/tennis/40400589",
+            "urlToImage": "http://ichef.bbci.co.uk/onesport/cps/624/cpsprodpb/BF5B/production/_96678984_murray.jpg",
+            "publishedAt": "2017-06-25T18:54:53Z"
+        },
+        {
+            "author": "BBC Sport",
+            "title": "Women's World Cup 2017: South Africa beat Pakistan by three wickets",
+            "description": "Watch highlights from the 2017 Women's World Cup as South Africa defeat Pakistan by three wickets in the third match of the tournament at Grace Road.",
+            "url": "http://www.bbc.co.uk/sport/cricket/40397777",
+            "urlToImage": "http://ichef.bbci.co.uk/onesport/cps/624/cpsprodpb/1508D/production/_96675168_p056xqcl.jpg",
+            "publishedAt": "2017-06-25T19:44:57Z"
+        },
+        {
+            "author": "BBC Sport",
+            "title": "Roger Federer beats Alexander Zverev to win Gerry Weber Open in Halle",
+            "description": "Roger Federer warms up for Wimbledon by beating Alexander Zverev to earn a record ninth title at the Gerry Weber Open.",
+            "url": "http://www.bbc.co.uk/sport/tennis/40398235",
+            "urlToImage": "http://ichef.bbci.co.uk/onesport/cps/624/cpsprodpb/0FE3/production/_96676040_federer.jpg",
+            "publishedAt": "2017-06-25T14:20:15Z"
+        },
+        {
+            "author": "BBC Sport",
+            "title": "British and Irish Lions 2017: Change tactics, not personnel - Sir Clive Woodward",
+            "description": "The British and Irish Lions are totally beatable in the second Test against New Zealand, says former coach Sir Clive Woodward.",
+            "url": "http://www.bbc.co.uk/sport/rugby-union/40396772",
+            "urlToImage": "http://ichef.bbci.co.uk/onesport/cps/624/cpsprodpb/12B95/production/_96639667_warburton_getty.jpg",
+            "publishedAt": "2017-06-25T20:33:21Z"
+        }
+    ]
+}
