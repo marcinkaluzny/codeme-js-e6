@@ -14,3 +14,7 @@ body {
 
 .tabsWrapper section[role="tablist"] {
 }
+
+[aria-hidden="true"] {
+    display: none;    
+}
