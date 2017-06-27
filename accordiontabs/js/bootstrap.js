@@ -3,24 +3,9 @@
 	window.addEventListener("load", function () {
 		console.log('APP START');
 
-		getResponse("/data/bbc-sport.json", function (data) {
-			const section = document.getElementById("sport");
+		getResponse("/data/bbc-sport.json", articles("sport"));
 
-			section.innerHTML = data.articles.map(function (article) {
-				return `<article><header role="tab">
-				<h3>${article.title}</h3>
-				</header>
-				<div role="tabpanel" aria-hidden="true">
-	    			<img src="${article.urlToImage}" width="150" alt="">
-	    			${article.description}
-	    			<br>
-	    			<a href="${article.url}" title="${article.title}" target="_blank">more ...</a>
-	    		</div></article>`;
-
-	    		section.appendChild(articleTag);
-			}).join("");
-
-		});
+		getResponse("/data/reddit-r-all.json", articles("news"));
 	}, false);
 
 	function getResponse(url, success, error) {
@@ -39,6 +24,30 @@
 		}, false);
 
 		xhr.send();
+	}
+
+	function articles(elementID) {
+		const section = document.getElementById(elementID);
+
+		return function (data) {
+			section.innerHTML = data.articles.map(
+				function (article, index) {
+					const uid = `${elementID}-${index}`;
+					return `<article>
+					<header role="tab" aria-controls="${uid}" tabindex="-1">
+					<h3>${article.title}</h3>
+					</header>
+					<div id="${uid}" role="tabpanel" aria-hidden="true">
+		    			<img src="${article.urlToImage}" width="150" alt="">
+		    			${article.description}
+		    			<br>
+		    			<a href="${article.url}" title="${article.title}" target="_blank">more ...</a>
+		    		</div></article>`;
+				}
+			).join("");
+
+			new TabList(section);
+		};
 	}
 }());
 
