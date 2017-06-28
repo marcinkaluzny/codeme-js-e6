@@ -6,6 +6,8 @@
 		getResponse("/data/bbc-sport.json", articles("sport"));
 
 		getResponse("/data/reddit-r-all.json", articles("news"));
+		
+		addArticle("post-form");
 	}, false);
 
 	function getResponse(url, success, error) {
@@ -48,6 +50,36 @@
 
 			new TabList(section);
 		};
+	}
+
+	function post(url, data, success, error) {
+		const xhr = new XMLHttpRequest();
+
+	 	xhr.open("POST", url, true);
+
+		xhr.addEventListener("load", function (e) {
+		 	success(JSON.parse(xhr.response));
+		}, false);
+
+		xhr.addEventListener("error", function (e) {
+		 	if ("function" === typeof error) {
+		 		error();
+		 	}
+		}, false);
+
+		xhr.send(data);
+	}
+
+	function addArticle(formId) {
+		const form = document.getElementById(formId);
+
+		const button = form.elements.send;// form.querySelector("button[name=send]");
+
+		const data = new FormData(form);
+		data.append("pole1", "dhgfhjdjhfghs");
+		button.addEventListener("click", function (e) {
+			post("/data/reddit-r-all.json", data);
+		}, false);
 	}
 }());
 
