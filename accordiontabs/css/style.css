@@ -17,3 +17,9 @@ body {
 [aria-hidden="true"] {
     display: none;    
 }
+
+
+.formSection {
+    clear: all;
+    margin: 25px;
+}
