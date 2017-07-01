@@ -92,8 +92,8 @@ function TabList(elementRoleTabList) {
 			break;
 		case 13:
 		case 32:
-		//console.log(document.activeElement);
-		document.activeElement.click();
+			//console.log(document.activeElement);
+			document.activeElement.click();
 			break;
 		case 27:
 			document.activeElement.blur();
