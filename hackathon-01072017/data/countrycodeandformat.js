@@ -1,4 +1,4 @@
-const TEL_COUNTRY_CODE = {
+{
     us: {
         telCountryCode: 1,
         format: '(XXX) XXX-XXXX'
@@ -306,7 +306,7 @@ const TEL_COUNTRY_CODE = {
     is: {
         telCountryCode: 354
     },
-    in : {
+    in: {
         telCountryCode: 91,
         format: 'XXXXX-XXXXX'
     },

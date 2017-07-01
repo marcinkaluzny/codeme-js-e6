@@ -1,4 +1,4 @@
-const TEL = {
+{
     af: {
         telCountryCode: 93,
     },
@@ -736,4 +736,4 @@ const TEL = {
     zw: {
         telCountryCode: 263,
     },
-};
+}
