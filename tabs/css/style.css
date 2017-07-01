@@ -1,0 +1,55 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.tablist {
+    position: fixed;
+    top: 0%;
+    left: 50%;
+    width: 410px;
+    height: 410px;
+    transform: translate(-50%, 5%);
+    outline: none;
+    font-size: 0;
+    overflow: hidden;
+}
+
+ul[role="tablist"] {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    z-index: 10;
+}
+
+ul[role="tablist"] li {
+    display: inline-block;
+    padding: 10px 10px; 
+    margin: 0 -1px 0 0;
+    border: 1px solid #ccc;
+    border-bottom: none;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    overflow: hidden;
+    font-size: 15px;
+}
+
+ul[role="tablist"] li[aria-selected="true"] {
+    border: 1px solid #333;
+    border-bottom: none;
+    background-color: #fff;
+    z-index: 100;
+}
+
+
+div[role="tabpanel"] {
+    border: 1px solid #333;
+    margin-top: -2px;
+    padding: 10px;
+    height: 348px;
+    overflow: hidden;
+    overflow-y: auto;
+    font-size: 15px;
+}

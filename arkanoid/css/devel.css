@@ -1,0 +1,78 @@
+html.ball .game {
+    width: 420px;
+    height: 270px;
+}
+
+html.ball .arena .bricks,
+.paddle {
+    opacity: 0.1;
+}
+
+html.ball .game .arena::before {
+    content: "";
+    position: absolute;
+    top: 226px;
+    right: -20px;
+    left: -20px;
+    border-top: 1px dashed #999;
+}
+
+html.ball .game .arena::after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    top: -20px;
+    bottom: -20px;
+    left: 308px;
+    border-left: 1px dashed #999;
+}
+
+body::before {
+    content: "0, 0";
+    position: fixed;
+    top: 2px;
+    left: 2px;
+    padding: 3px 5px;
+    font-size: 12px;
+    background-color: #333;
+    color: #fff;
+}
+
+body::after {
+    content: "";
+    position: fixed;
+    top: -4px;
+    left: -4px;
+    border: 4px solid rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 1);
+    transform: rotate(45deg);
+}
+
+.game::before {
+    content: "arena :: relative";
+    position: absolute;
+    font-size: 10px;
+    color: #000;
+    left: 0;
+    top: -13px;
+    background-color: #ccc;
+    padding: 1px 3px;
+}
+
+.ball::before {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: calc(50% - 1.5px);
+    border: 2px solid #369;
+    border-radius: 50%;
+}
+
+.ball::after {
+    content: "";
+    position: absolute;
+    top: calc(50% - 1.5px);
+    left: -2px;
+    border: 2px solid #c00;
+    border-radius: 50%;
+}

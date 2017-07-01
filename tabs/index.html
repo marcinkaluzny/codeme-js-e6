@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CODE:ME js-e6-workshop</title>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <link href="css/style.css" type="text/css" rel="stylesheet" />
+    </head>
+    <body>
+        <div id="tablist-component-1" class="tablist">
+            <ul role="tablist">
+                <li role="tab" aria-controls="panel-a">Tab - panel - 3</li>
+                <li role="tab" aria-controls="panel-1" aria-selected="true">Tab - panel - 1</li>
+                <li role="tab" aria-controls="panel-3">Tab - panel - 5</li>
+            </ul>
+            <div id="panel-1" role="tabpanel">Panel - 1</div>
+            <div id="panel-2" role="tabpanel" hidden aria-hidden="true">Panel - 2</div>
+            <div id="panel-a" role="tabpanel" hidden aria-hidden="true">Panel - 3</div>
+            <div id="panel-3" role="tabpanel" hidden aria-hidden="true">Panel - 4</div>
+            <div id="panel-b" role="tabpanel" hidden aria-hidden="true">Panel - 5</div>
+        </div>
+
+        <script src="scripts/tabs.js"></script>
+    </body>
+</html>
